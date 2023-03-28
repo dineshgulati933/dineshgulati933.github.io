@@ -21,6 +21,20 @@
 
 }
 
+.light-mode{
+    --mainTextColor-dark:#fff;
+    --secondaryTextColor-dark:#adb0b1;
+    --mainLinkColor-dark:rgb(30, 190,214);
+    --mainBorderColor-dark:#2b3031;
+    --mainBgColor-dark:#131415;
+    
+    --mainTextColor:var(--mainTextColor-light);
+    --secondaryTextColor:var(--secondaryTextColor-light);
+    --mainLinkColor:var(--mainLinkColor-light);
+    --mainBorderColor:var(--mainBorderColor-light);
+    --mainBgColor:var(--mainBgColor-light);
+
+}
 
 *{
     font-family: 'Readex Pro';
@@ -172,7 +186,9 @@ color:yellow;
     background-color: var(--mainBorderColor);
     height: 1px;
 }
-
+.toggle-container {
+    float: right;
+  }  
 
 @media(max-width:600px){
 

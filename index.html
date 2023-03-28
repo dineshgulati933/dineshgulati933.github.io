@@ -10,6 +10,10 @@
     </head>
     <body>
         <div id="container--main">
+            <div class="toggle-container">
+                <button onclick="toggleDarkMode()"> <i class="fa fa-lightbulb-o teal-color" title="click to toggle"></i></button>
+              </div>
+              
 
             <section id="wrapper--hero" class="section--page">
                 <img id="profile-pic" src="./assets/images/Profile_pic.jpeg" title="Dinesh Gulati">
@@ -28,6 +32,7 @@
                     <a href="https://github.com/dineshgulati933" target="_blank"><i class='fa fa-github teal-color' title="github"></i> Github</a>
                     <a href="https://dineshgulati933.github.io/digital-agri-blog/" target="_blank"><i class='fa fa-globe teal-color' title="github"></i> My blog</a>
                     <a href="./assets/DINESH_GULATI_CV.pdf" target="_blank"><i class='fa fa-download teal-color' title="download CV"></i> Download CV</a>
+                    
                 </div>
             </section>
 
@@ -162,6 +167,11 @@
             </section>
        
         </div>
+        <script>function toggleDarkMode() {
+            const body = document.querySelector('body');
+            body.classList.toggle('light-mode');
+          }
+          </script>
 
     </body>
 </html>
